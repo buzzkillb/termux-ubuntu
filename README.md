@@ -30,4 +30,12 @@ wget https://raw.githubusercontent.com/buzzkillb/termux-ubuntu/master/ubuntu16.s
 After running it you can run "start-ubuntu.sh" to switch into your ubuntu
 
 Termux External Storage Setup  
-https://wiki.termux.com/wiki/Internal_and_external_storage
+https://wiki.termux.com/wiki/Internal_and_external_storage  
+
+From termux to mount that external drive, make a file in ~/home/ubuntufolder/binds  
+```
+nano /home/ubuntu16/binds/crypto
+```
+```
+command+=" -b /sdcard"
+```
