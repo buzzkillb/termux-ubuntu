@@ -39,3 +39,12 @@ nano /home/ubuntu16/binds/crypto
 ```
 command+=" -b /sdcard"
 ```
+in Termux-Ubuntu, df -h showed my large drive as /storage/313-3461  
+```df -h
+ln -s /storage/3133-3461/ ~/storage
+cd ~/storage/Android/data/com.termux/files
+```
+If you can create a directory there, you can store a blockchain. Example  
+```
+--datadir /storage/Android/data/com.termux/files
+```
